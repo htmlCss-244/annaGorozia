@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 36px;
+}
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.images img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.paragraph1 {
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.paragraph2 {
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border: 1px dashed #34495e;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: white;
+}
+
+
+thead th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-right: 1px dashed #34495e;
+    border-bottom: 1px dashed #34495e;
+}
+
+thead th:first-child {
+    border-left: 1px dashed #34495e;
+}
+
+thead tr:first-child th {
+    border-top: 1px dashed #34495e;
+}
+
+
+tbody td {
+    padding: 12px;
+    background-color: #ecf0f1;
+    border-right: 1px dashed #34495e;
+    border-bottom: 1px dashed #34495e;
+}
+
+tbody td:first-child {
+    border-left: 1px dashed #34495e;
+}
+
+tbody tr:last-child td {
+    border-bottom: 1px dashed #34495e;
+}
+
+
+form {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+    .images img {
+        width: 100%;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
