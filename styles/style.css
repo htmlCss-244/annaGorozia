@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+
+.header {
+    width: 960px;
+    height: 90px;
+    margin: 0 auto;
+    background-image: url('../Images/shapka.svg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+}
+
+
+.nav-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.nav-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 400;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    cursor: default;
+    pointer-events: none;
+}
+
+.nav-link.active {
+    color: #000000;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.gallery-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.dots {
+    width: 10px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dots::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 
+        0 12px 0 0 #000000,
+        0 24px 0 0 #000000,
+        0 36px 0 0 #000000,
+        0 48px 0 0 #000000,
+        0 60px 0 0 #000000,
+        0 72px 0 0 #000000,
+        0 84px 0 0 #000000,
+        0 96px 0 0 #000000,
+        0 108px 0 0 #000000,
+        0 120px 0 0 #000000,
+        0 132px 0 0 #000000,
+        0 144px 0 0 #000000;
+}
+
+.gallery-item img {
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item:nth-child(1) img {
+    width: 200px;
+}
+
+.gallery-item:nth-child(2) img {
+    width: 225px;
+}
+
+.gallery-item:nth-child(3) img {
+    width: 100px;
+}
+
+
+.content {
+    margin-bottom: 40px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text-box {
+    width: 870px;
+    min-height: 225px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.text-box p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+}
+
+.text-box .link {
+    color: #0066ff;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.text-box .link:hover {
+    opacity: 0.8;
+}
+
+
+.contact {
+    padding: 40px 15px;
+    margin: 40px 0 80px;
+}
+
+.contact-box {
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    padding: 40px;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.contact input {
+    width: 100%;
+    max-width: 930px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 0 15px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.contact input:focus {
+    outline: none;
+    border-color: #0066ff;
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        width: 100%;
+        max-width: 960px;
+    }
+    
+    .container {
+        padding: 0 30px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    
+    .gallery-item:nth-child(1) img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .gallery-item:nth-child(2) img {
+        width: 225px;
+        height: 150px;
+    }
+    
+    .gallery-item:nth-child(3) img {
+        width: 100px;
+        height: 150px;
+    }
+    
+    .text-box {
+        width: 100%;
+    }
+    
+    .contact {
+        padding: 30px 20px;
+    }
+    
+    .contact-box {
+        padding: 30px;
+    }
+    
+    .contact input {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
