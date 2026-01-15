@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sticky navigation menu -->
+    <nav class="nav">
+      <a class="nav-link home" href="#">Home</a>
+      <a class="nav-link about" href="#">About</a>
+      <a class="nav-link gallery" href="#">Gallery</a>
+      <a class="nav-link services" href="#">Services</a>
+      <a class="nav-link tutorials" href="#">Tutorials</a>
+      <a class="nav-link contacts" href="#">Contacts</a>
+    </nav>
+
+    <!-- Fixed social media panel -->
+    <div class="social">
+      <a class="social-link facebook" href="#" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook" />
+        <span class="social-text">Facebook</span>
+      </a>
+      <a class="social-link twitter" href="#" aria-label="Twitter">
+        <img src="images/twitter.svg" alt="Twitter" />
+        <span class="social-text">Twitter</span>
+      </a>
+      <a class="social-link instagram" href="#" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram" />
+        <span class="social-text">Instagram</span>
+      </a>
+      <a class="social-link linkedin" href="#" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn" />
+        <span class="social-text">LinkedIn</span>
+      </a>
+      <a class="social-link github" href="#" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub" />
+        <span class="social-text">GitHub</span>
+      </a>
+      <a class="social-link youtube" href="#" aria-label="YouTube">
+        <img src="images/youtube.svg" alt="YouTube" />
+        <span class="social-text">YouTube</span>
+      </a>
+    </div>
+
+    <main class="page">
+      <!-- Main content section -->
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse. Excepteur sint occaecat
+          cupidatat non proident.
+        </p>
+
+        <!-- Table between paragraphs -->
+        <table class="info-table">
+          <tr>
+            <td>Lorem ipsum</td>
+            <td>Dolor sit</td>
+            <td>Amet elit</td>
+          </tr>
+          <tr>
+            <td>Consectetur</td>
+            <td>Adipiscing</td>
+            <td>Vestibulum</td>
+          </tr>
+        </table>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          vel sem at mauris viverra euismod. Integer euismod, nisl at convallis
+          tempus, lorem felis molestie neque. Sed sit amet justo vitae sapien
+          dictum placerat. Vivamus ultricies, massa nec pretium tincidunt,
+          ligula est ullamcorper nulla. Aenean sit amet arcu ut justo suscipit
+          posuere.
+        </p>
+
+        <!-- Another table between paragraphs -->
+        <table class="info-table">
+          <tr>
+            <td>Curabitur</td>
+            <td>Viverra</td>
+            <td>Maecenas</td>
+          </tr>
+          <tr>
+            <td>Integer</td>
+            <td>Facilisis</td>
+            <td>Praesent</td>
+          </tr>
+        </table>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          facilisis, neque eget vestibulum posuere, urna dolor fermentum nunc.
+          Quisque sit amet lorem a tortor gravida tincidunt. Proin euismod
+          lorem vel mi suscipit, ut sodales nisl blandit. Nulla facilisi.
+          Phasellus non elit nec elit faucibus tincidunt. Donec ac lacus ac
+          justo laoreet congue.
+        </p>
+
+        <!-- Comments section -->
+        <section class="comments">
+          <div class="comments-wrapper">
+            <!-- Comment and avatar together -->
+            <div class="comment-card">
+              <div class="comment-avatar">
+                <img src="images/avatar.svg" alt="Avatar" />
+              </div>
+              <div class="comment-body">
+                <div class="comment-title">Add a comment</div>
+
+                <!-- Stars and comment area together -->
+                <div class="stars">
+                  <input type="radio" name="rating" id="star5" />
+                  <label for="star5">★</label>
+                  <input type="radio" name="rating" id="star4" />
+                  <label for="star4">★</label>
+                  <input type="radio" name="rating" id="star3" />
+                  <label for="star3">★</label>
+                  <input type="radio" name="rating" id="star2" />
+                  <label for="star2">★</label>
+                  <input type="radio" name="rating" id="star1" />
+                  <label for="star1">★</label>
+                </div>
+                <textarea
+                  class="comment-area"
+                  rows="4"
+                  placeholder="What is your view?"
+                ></textarea>
+
+                <!-- Input and buttons together -->
+                <div class="input-and-buttons">
+                  <input
+                    class="name-input"
+                    type="text"
+                    placeholder="Your name"
+                  />
+                  <div class="buttons">
+                    <button class="btn preview" type="button">Preview</button>
+                    <button class="btn send" type="button">Send →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-title">Useful Links</div>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="#">Shop</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-column footer-center">
+          <div class="footer-title">Newsletter</div>
+          <input
+            class="footer-input"
+            type="email"
+            placeholder="Your Email Address"
+          />
+          <button class="footer-button" type="button">Subscribe Now</button>
+        </div>
+
+        <div class="footer-column footer-right">
+          <div class="footer-title">Contact</div>
+          <p>123, XYZ Road, BSK 3</p>
+          <p>Bangalore, Karnataka, IN</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
